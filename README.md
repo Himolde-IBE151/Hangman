@@ -73,8 +73,10 @@ If (s)he succeds, the program prints "Success, you won!" otherwise prints "You l
 Try to solve the problem by yourself. Then you can verify your answer [here](./hangman.py)
 
 ### Exercise: Given a secretWord (a string), print 3 '_' for every character in the secret word (preparation for the Hangman game). For instance, if the secretWord is "Sky" the program should print:
+```
 ___ ___ ___
-(3 _ for every character)
+```
+(3 '_' for every character)
 
 Hint: use a for loop, like in 
 ```python
