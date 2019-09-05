@@ -33,7 +33,7 @@ s = input("Type a name with 4 letters or more")
 print (s[0] + " " + s[1] + " " + s[2] + " " + s[3])
 print("The size of the string is", len(s))
 ```
-### From now on, consider that the user may enter strings with size (larger than 1)
+### From now on, consider that the user may enter strings with any size (larger than 1)
 
 *Branching. Objective: To know how to ask for a character in the string*.
 ### Exercise: The user should type a character. If the character entered is the first letter of your name, print "You wrote the first letter of my name"
