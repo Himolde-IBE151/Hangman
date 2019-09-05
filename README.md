@@ -30,7 +30,6 @@ print("The character at position", p, "in the word", s, "is", s[p])
 ### Exercise: Input a string s with 4 character or more. Print the all characters separated by spaces and in the next line, the size of the string. 
 ```python
 s = input("Type a name with 4 letters or more")
-#print first letter of the string
 print (s[0] + " " + s[1] + " " + s[2] + " " + s[3])
 print("The size of the string is", len(s))
 ```
@@ -44,20 +43,23 @@ s = input ("Enter the first letter of my name")
 if (s[0] == 'X'): 
     print("You wrote the first letter of my name")
 ```
-
-### To know how to use the length of the string for indexing the last character.
-### To know how to ask for a character in the string
-### Exercise: Print "You wrote the last letter of my name" if the letter the user typed is the last letter of your name
-#They know how to ask for the last letter
-#Ask for the last character typed
-if (s[len(s)-1] == 'n'):
+### To know how to use the length of the string to index the last character in s.
+### To be able to take decisions according to the character in a position in the string
+### Exercise: Save your name in the variable s. Input a letter l. If the letter entered is the last character in s, print "You wrote the last letter of my name".
+### In the next code, replace s by your name.
+```python
+s = "My Name"
+if (s[len(s)-1] == l):
     print("You wrote the last letter of my name")
+```
 
-#They know how to use logical operators
-#Ask if the user entered the first letter of your name
-if (s[0] == 'A') and (s[1] == 'n') and (s[2] == 'o') and (s[3] == 'l') and  (s[4] == 'a') and (s[5] == 'n'):
-    print("You wrote my name!")
-
+### To know how to use logical operators
+### Exercise: Input a string s. Compare every letter in your name with the same number of characters in s. If the string s starts with your name, print "Your string starts with my name!". 
+###(In the next code replace Name with your name. You may need more comparissons)
+```python
+if (s[0] == 'N') and (s[1] == 'a') and (s[2] == 'm') and (s[3] == 'e'):
+    print("Your string starts with my name!")
+```
 
 ### Exercise: Guess a letter inside a word.
 We have fixed a secret word (a string) in your program. For instance 
@@ -70,10 +72,12 @@ If (s)he succeds, the program prints "Success, you won!" otherwise prints "You l
 
 Try to solve the problem by yourself. Then you can verify your answer [here](./hangman.py)
 
-## 
+### Exercise: Given a secretWord (a string), print 3 '_' for every character in the secret word (preparation for the Hangman game). For instance, if the secretWord is "Sky" the program should print:
+___ ___ ___
+(3 _ for every character)
 
-
+Hint: use a for loop, like in 
 ```python
-
-
+for i in range(10):
 ```
+
