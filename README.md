@@ -25,7 +25,7 @@ The program inputs from the user **1 character** and then the **position** where
 If (s)he succeds, the program prints "Success, you won!" otherwise prints "You lost!" 
 
 Try to solve the problem by yourself. Then you can verify your answer here:
-(./hangman.py)
+[](./hangman.py)
 
 
 ## 
