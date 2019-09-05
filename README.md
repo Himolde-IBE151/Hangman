@@ -15,8 +15,8 @@ print(s[4])
 ```
 The position **must be an integer**.
 
-### Exercise: Input a word from the keyboard. Assuming that the user always enters a word with more than two characters, print the second letter of a word. 
-The second letter of a word is at position 1, since the index of the first position is 0.
+### Exercise: Input a word s from the keyboard. Assuming that the user always enters a word with more than two characters, print the second letter of the word s. 
+The second letter of s is at position 1, since the index of the first position is 0.
 ```python
 s = input ("Enter a word with more than two characters")
 print("The second character in the word you typed is", s[1])
@@ -25,7 +25,7 @@ print("The second character in the word you typed is", s[1])
 ```python
 s = input ("Enter a word with more than two characters")
 p = int(input("Enter the position of the letter you want me to print")
-print("The character", p, "in the word", s,"is", s[p])
+print("The character at position", p, "in the word", s, "is", s[p])
 ```
 ### Exercise: Guess a letter inside a word.
 We have fixed a secret word (a string) in your program. For instance 
