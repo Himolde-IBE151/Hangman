@@ -7,7 +7,7 @@ p = int(input ("Write the position: "))
 if s == secretWord[p]:
     print("You won! \N{grinning face with smiling eyes}")
 else:
-    print("You lost \N{face with rolling eyes}") #Unicode Name
+    print("You lost \N{face with rolling eyes}") 
     #print("\N{grimacing face}")
     #print("😢")
     #https://www.geeksforgeeks.org/python-program-to-print-emojis/
