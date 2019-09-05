@@ -20,10 +20,11 @@ We have fixed a secret word (a string) in your program. For instance
 ```python
 secretWord = "Orangutan"
 ```
-The user will guess **1 letter** that appears in the secret word and then the **position** where it appears on the secret word (**positions start from 0**). 
+In this game, the user needs to guess one of the letters of a word that we have fixed in our program. 
+The program inputs from the user **1 character** and then the **position** where (s)he guesses the character appears in the secret word (**positions start from 0**). 
 If (s)he succeds, the program prints "Success, you won!" otherwise prints "You lost!" 
 
-Try to solve the problem. Then you can verify your answer here:
+Try to solve the problem by yourself. Then you can verify your answer here:
 (./hangman.py)
 
 
