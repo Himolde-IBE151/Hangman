@@ -5,11 +5,10 @@ Let's start!
 
 ## Guess a letter inside a word.
 We have fixed a secret word (a string).
-The user will guess **1 letter** and then the position where it appears on the secret word. 
-If (s)he succeds, the program should print  "Success, you won!" otherwise will print "You lost!"
+The user will guess **1 letter** that appears in the secret word and then the **position** where it appears on the secret word (**positions start from 0**). 
+If (s)he succeds, the program prints "Success, you won!" otherwise prints "You lost!" 
 
 #Remember that string's first index is 0
-
 hangman.py
 
 secretWord = "Orangutan"
