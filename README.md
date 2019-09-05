@@ -10,7 +10,7 @@ If (s)he succeds, the program prints "Success, you won!" otherwise prints "You l
 
 #Remember that string's first index is 0
 hangman.py
-
+```python
 secretWord = "Orangutan"
 s = input ("Write a character: ")
 p = int(input ("Write the position: "))
@@ -18,7 +18,7 @@ if s == secretWord[p]:
     print("You won! \N{grinning face with smiling eyes}")
 else:
     print("You lost \N{face with rolling eyes}") 
-
+```
 ## 
 
 
