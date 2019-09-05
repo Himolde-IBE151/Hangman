@@ -85,8 +85,7 @@ for i in range(10):
 ### Exercise: Input a string s. Print all the characters in s separated by 3 spaces. 
 Hint: use a for loop
 
-### Exercise: Verify if a character appears in a word. 
-### Input a word s and a character c. If the character appears in the word print("Found it!"). Otherwise, print(Not found")
+### Exercise: Verify if a character appears in a word. Input a word s and a character c. If the character appears in the word print("Found it!"). Otherwise, print(Not found")
 Hint: use a for loop and search for c character by character in s
 
 ### Exercise: Input a string s and a character c. Print how many times c appears in s. 
