@@ -1,4 +1,4 @@
-# Hangman Game
+# Preparation for the Hangman Game
 In this assignment you will implement the **Hangman game**. 
 We need to practice some concepts from last class that will be needed to implement the game. 
 Let's start!
