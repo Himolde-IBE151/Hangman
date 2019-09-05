@@ -27,7 +27,7 @@ s = input ("Enter a word with more than two characters ")
 p = int(input("Enter the position of the letter you want me to print ")
 print("The character at position", p, "in the word", s, "is", s[p])
 ```
-### Exercise: Input a string s with 4 character or more. Print the all characters separated by spaces and in the next line, the size of the string. 
+### Exercise: Input a string s with 4 character or more. Print all the characters separated by spaces and in the next line, the size of the string. 
 ```python
 s = input("Type a name with 4 letters or more")
 print (s[0] + " " + s[1] + " " + s[2] + " " + s[3])
