@@ -45,8 +45,9 @@ if (s[0] == 'X'):
 ```
 *Objective: To know how to use the length of the string to index the last character in s. To be able to take decisions according to the character in a position in the string*
 ### Exercise: Save your name in the variable s. Input a letter l. If the letter entered is the last character in s, print "You wrote the last letter of my name".
-### In the next code, replace s by your name.
+### In the next code, replace "My Name" by your name.
 ```python
+# write the commands missing here
 s = "My Name"
 if (s[len(s)-1] == l):
     print("You wrote the last letter of my name")
@@ -81,12 +82,12 @@ Hint: use a for loop, like in
 ```python
 for i in range(10):
 ```
-### Exercise: Input a string s. Print the all characters in s separated by 3 spaces. 
+### Exercise: Input a string s. Print all the characters in s separated by 3 spaces. 
 Hint: use a for loop
 
 ### Exercise: Verify if a character appears in a word. 
 ### Input a word s and a character c. If the character appears in the word print("Found it!"). Otherwise, print(Not found")
 Hint: use a for loop and search for c character by character in s
 
-### Exercise: Input a string s and a character c that appears in s. Print how many times c appears in s. 
+### Exercise: Input a string s and a character c. Print how many times c appears in s. 
 Try to solve the problem by yourself. Then you can verify your answer [here](./counter.py)
