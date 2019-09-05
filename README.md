@@ -53,7 +53,7 @@ if (s[len(s)-1] == l):
     print("You wrote the last letter of my name")
 ```
 
-* Objective: To know how to use logical operators *
+*Objective: To know how to use logical operators*
 ### Exercise: Input a string s. Compare every letter in your name with the same number of characters in s. If the string s starts with your name, print "Your string starts with my name!". 
 *In the next code replace Name with your name. You may need more comparissons*
 ```python
