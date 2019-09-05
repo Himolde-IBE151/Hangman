@@ -61,7 +61,7 @@ if (s[0] == 'N') and (s[1] == 'a') and (s[2] == 'm') and (s[3] == 'e'):
     print("Your string starts with my name!")
 ```
 
-### Exercise: Guess a letter inside a word.
+### Exercise:(Game) Guess a letter inside a word.
 We have fixed a secret word (a string) in your program. For instance 
 ```python
 secretWord = "Orangutan"
@@ -80,4 +80,12 @@ Hint: use a for loop, like in
 ```python
 for i in range(10):
 ```
+### Exercise: Input a string s. Print the all characters in s separated by 3 spaces. 
+Hint: use a for loop
 
+### Exercise: Verify if a character appears in a word. 
+### Input a word s and a character c. If the character appears in the word print("Found it!"). Otherwise, print(Not found")
+Hint: use a for loop and search for c character by character in s
+
+### Exercise: Input a string s and a character c that appears in s. Print how many times c appears in s. 
+Try to solve the problem by yourself. Then you can verify your answer [here](./counter.py)
