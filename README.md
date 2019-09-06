@@ -15,19 +15,22 @@ print(s[4])
 ```
 The position **must be an integer**.
 
-### Exercise: Input a string s from the keyboard. Assuming that the user always enters a string with more than two characters, print the second letter of s. 
+### Exercise: 
+**Input a string s from the keyboard. Assuming that the user always enters a string with more than two characters, print the second letter of s.**
 The second letter of s is at position 1, since the index of the first position is 0.
 ```python
 s = input ("Enter a word with more than two characters ")
 print("The second character in the word you typed is", s[1])
 ```
-### Exercise: Input a string s and the position p of a letter in s. Print the letter that corresponds to the position p in s. 
+### Exercise: 
+**Input a string s and the position p of a letter in s. Print the letter that corresponds to the position p in s.**
 ```python
 s = input ("Enter a word with more than two characters ")
 p = int(input("Enter the position of the letter you want me to print ")
 print("The character at position", p, "in the word", s, "is", s[p])
 ```
-### Exercise: Input a string s with 4 character or more. Print all the characters separated by spaces and in the next line, the size of the string. 
+### Exercise:
+**Input a string s with 4 character or more. Print all the characters separated by spaces and in the next line, the size of the string.**
 ```python
 s = input("Type a name with 4 letters or more")
 print (s[0] + " " + s[1] + " " + s[2] + " " + s[3])
@@ -46,7 +49,7 @@ if (s[0] == 'X'):
 ```
 *Objective: To know how to use the length of the string to index the last character in s. To be able to take decisions according to the character in a position in the string*
 ### Exercise: 
-**Save your name in the variable s. Input a letter and assign it to the variable v. If the letter entered is the last character in s, print "You wrote the last letter of my name". Note that the next code have instructions missing that you will have to add. **
+**Save your name in the variable s. Input a letter and assign it to the variable v. If the letter entered is the last character in s, print "You wrote the last letter of my name". Note that the next code have instructions missing that you will have to add.**
 *In the next code, replace "My Name" by your name.*
 ```python
 # write the commands missing here
@@ -64,7 +67,8 @@ if (s[0] == 'N') and (s[1] == 'a') and (s[2] == 'm') and (s[3] == 'e'):
     print("Your string starts with my name!")
 ```
 
-### Exercise:(Game) Guess a letter inside a word.
+### Exercise:(Game) 
+**Guess a letter inside a word.**
 We have fixed a secret word (a string) in your program. For instance 
 ```python
 secretWord = "Orangutan"
@@ -76,7 +80,8 @@ If (s)he succeds, the program prints "Success, you won!" otherwise prints "You l
 **Try to solve the problem by yourself.** Then you can verify your answer [here](./hangman.py)
 You can use emojis in your program. [Here](./funnyEmojis.py) you can see how to print some of them.
 
-### Exercise: Given a secretWord (a string), print 3 '_' for every character in the secret word (preparation for the Hangman game). For instance, if the secretWord is "Sky" the program should print:
+### Exercise: 
+**Given a secretWord (a string), print 3 '_' for every character in the secret word (preparation for the Hangman game). For instance, if the secretWord is "Sky" the program should print:**
 ```
 ___ ___ ___
 ```
@@ -86,11 +91,14 @@ Hint: use a for loop, like in
 ```python
 for i in range(10):
 ```
-### Exercise: Input a string s. Print all the characters in s separated by 3 spaces. 
+### Exercise: 
+**Input a string s. Print all the characters in s separated by 3 spaces.** 
 Hint: use a for loop
 
-### Exercise: Verify if a character appears in a word. Input a word s and a character c. If the character appears in the word, print("Found it!"). Otherwise, print(Not found")
-Hint: use a for loop and search for c character by character in s
-
-### Exercise: Input a string s and a character c. Print how many times c appears in s. 
+### Exercise: 
+**Input a string s and a character c. Print how many times c appears in s.**
 **Try to solve the problem by yourself.** Then you can verify your answer [here](./counter.py)
+
+### Exercise: 
+**Verify if a character appears in a word. Input a word s and a character c. If the character appears in the word, print("Found it!"). Otherwise, print(Not found")**
+Hint: use a for loop and search for c character by character in s
