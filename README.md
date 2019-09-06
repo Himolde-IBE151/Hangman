@@ -71,7 +71,7 @@ The program inputs from the user **1 character** s and then the **position** p w
 If (s)he succeds, the program prints "Success, you won!" otherwise prints "You lost!" 
 
 **Try to solve the problem by yourself.** Then you can verify your answer [here](./hangman.py)
-You can use emojis in your program. [Here](./funnyEmojis.py) you find some of them.
+You can use emojis in your program. [Here](./funnyEmojis.py) you can see how to print some of them.
 
 ### Exercise: Given a secretWord (a string), print 3 '_' for every character in the secret word (preparation for the Hangman game). For instance, if the secretWord is "Sky" the program should print:
 ```
