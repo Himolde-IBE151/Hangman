@@ -1,4 +1,6 @@
 #See more at https://www.geeksforgeeks.org/python-program-to-print-emojis/
+import words
+print(words.get_words())
 
 # grinning face 
 print("\U0001f600") 
@@ -18,3 +20,6 @@ print("\U0001F923") \
 print("\N{face with rolling eyes}") 
 
 print(u"\U0001F97A")
+
+
+
