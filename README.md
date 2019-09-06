@@ -36,7 +36,8 @@ print("The size of the string is", len(s))
 ### From now on, consider that the user may enter strings with any size (larger than 1)
 
 *Branching. Objective: To know how to ask for a character in the string*.
-### Exercise: The user should type a character. If the character entered is the first letter of your name, print "You wrote the first letter of my name"
+### Exercise: 
+**The user should type a character. If the character entered is the first letter of your name, print "You wrote the first letter of my name"**
 *In the next code, replace 'X' by the first letter in your name.*
 ```python
 s = input ("Enter the first letter of my name")
@@ -44,17 +45,19 @@ if (s[0] == 'X'):
     print("You wrote the first letter of my name")
 ```
 *Objective: To know how to use the length of the string to index the last character in s. To be able to take decisions according to the character in a position in the string*
-### Exercise: Save your name in the variable s. Input a letter l. If the letter entered is the last character in s, print "You wrote the last letter of my name".
+### Exercise: 
+**Save your name in the variable s. Input a letter and assign it to the variable v. If the letter entered is the last character in s, print "You wrote the last letter of my name". Note that the next code have instructions missing that you will have to add. **
 *In the next code, replace "My Name" by your name.*
 ```python
 # write the commands missing here
 s = "My Name"
-if (s[len(s)-1] == l):
+if (s[len(s)-1] == v):
     print("You wrote the last letter of my name")
 ```
 
 *Objective: To know how to use logical operators*
-### Exercise: Input a string s. Compare every letter in your name with the same number of characters in s. If the string s starts with your name, print "Your string starts with my name!". 
+### Exercise: 
+**Input a string s. Compare every letter in your name with the same number of characters in s. If the string s starts with your name, print "Your string starts with my name!".**
 *In the next code replace Name with your name. You may need more comparissons*
 ```python
 if (s[0] == 'N') and (s[1] == 'a') and (s[2] == 'm') and (s[3] == 'e'):
