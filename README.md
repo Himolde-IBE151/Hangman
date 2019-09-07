@@ -26,7 +26,7 @@ print("The second character in the word you typed is", s[1])
 **Input a string s and the position p of a letter in s. Print the letter that corresponds to the position p in s.**
 ```python
 s = input ("Enter a word with more than two characters ")
-p = int(input("Enter the position of the letter you want me to print ")
+p = int(input("Enter the position of the letter you want me to print "))
 print("The character at position", p, "in the word", s, "is", s[p])
 ```
 ### Exercise:
