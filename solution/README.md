@@ -14,7 +14,7 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 #          Play until finished. 
 #          if word is guessed: " You won! 😀" otherwise: " You lost! 😢"
 #
-````
+```
 ```python
 #          generate secret_word
 #          Initialize variables. N is the max number of attempts
@@ -24,6 +24,8 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 #             process the letter, if the word is complete: success and exit          
 #          endloop
 #          
+```
+```python
 # Execution loop: 
 #          generate secret_word
 #          Initialize variables. N is the max number of attempts
@@ -34,6 +36,8 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 #                verify if the word_in_progress == secret_word, in that case: success and exit          
 #          endloop           
 #
+```
+```python
 # Execution loop: 
 #          generate secret_word
 #          Initialize variables. 
@@ -48,6 +52,8 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 #             verify if the word_in_progress == secret_word, in that case: success and exit          
 #          endloop           
 #
+```
+```python
 # Execution loop: 
 #          generate secret_word
 #          Initialize variables. 
@@ -65,6 +71,8 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 #             verify if the word_in_progress == secret_word, in that case: success and exit          
 #          endloop           
 #
+```
+```python
 # Execution loop: 
 #          generate secret_word
 #          Initialize variables. 
@@ -85,6 +93,8 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 #             verify if the word_in_progress == secret_word, in that case: success and exit          
 #          endloop           
 #
+```
+```python
 # Execution loop: 
 #          generate secret_word
 #          Initialize variables. 
@@ -105,7 +115,9 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 #                           Flag found is still false? Then did not find it 
 #                               --> need to initialize found = False BEFORE THE FIND POSITION LOOP. Need to set found = true INSIDE THE LOOP IF FOUND
 #             verify if the word_in_progress == secret_word, in that case: success and exit          
-#          endloop           
+#          endloop  
+```
+```python
 # Execution loop: 
 #          generate secret_word
 #          Initialize variables. 
