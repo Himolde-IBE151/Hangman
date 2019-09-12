@@ -25,65 +25,67 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 #
 ```
 ```diff
-generate secret_word
-Initialize variables. 
+  generate secret_word
+  Initialize variables. 
 # Execution loop: 
 - #Play until finish
 + repeat N times --> I need initialize N as the max number of attempts
 -     #if word is guessed:
 +     read a letter
 +     process the letter, if the word is complete: success and exit          
-# endloop
-#          
+  endloop
+         
 ```
-```python
-generate secret_word
-Initialize variables:
+```diff
+  generate secret_word
+  Initialize variables:
 + N : max number of attempts
-repeat N times
+  repeat N times
       read a letter
-      #process the letter, if the word is complete: success and exit  
-#                check if the letter is in the secret_word. keep a record of the letters entered and their position. better in a word! -> update word_in_progress (remember to initialize!)
-#                verify if the word_in_progress == secret_word, in that case: success and exit          
-#          endloop           
-#
+-     #process the letter, if the word is complete: success and exit  
++     check if the letter is in the secret_word. keep a record of the letters entered and their position. 
++     (better in a word!) ->     update word_in_progress (remember to initialize!)
++     verify if the word_in_progress == secret_word, in that case: success and exit          
+  endloop           
 ```
-```python
+```diff
 # Execution loop: 
-#          generate secret_word
-#          Initialize variables. 
-#               N is the max number of attempts
-#               init word_in_progress: the first letter is secret_word[0], then for every char in secret_word we have " ___". 
-#               That is secret_word[0] + "_"*(len(secret_word) - 1) <-- we need to substract 1 because we already have the first letter
-#          repeat until N + 1
-#             read a letter c <-- in the future we would check if this was a letter, and only one, and that was not entered before, and transform it in lowercase, etc. Not in this assignment
-#             update word_in_progress: 
-#                    find the right position for the letter in secret_word if that is the case and update word_in_progress in every appearance of the letter
-#                    print how many attempts got left otherwise <-- track how many attempts already (remember initialize, attempt = 1)
-#             verify if the word_in_progress == secret_word, in that case: success and exit          
-#          endloop           
-#
+  generate secret_word
+  Initialize variables. 
+  N : max number of attempts
++ init word_in_progress: the first letter is secret_word[0], then for every char in secret_word we have " ___". 
++ That is secret_word[0] + "_"*(len(secret_word) - 1) <-- we need to substract 1 because we already have the first letter
+  repeat N times:
+      read a letter c <-- in the future we would check if this was a letter, 
+      and only one, and that was not entered before, and transform it in lowercase, etc. Not in this assignment
+      update word_in_progress: 
+          find the right position for the letter in secret_word if that is the case and update word_in_progress in every appearance of the letter
+          print how many attempts got left otherwise <-- track how many attempts already (remember initialize, attempt = 1)
+             verify if the word_in_progress == secret_word, in that case: success and exit          
+  endloop           
 ```
-```python
-# Execution loop: 
+```diff
 #          generate secret_word
 #          Initialize variables. 
 #               N is the max number of attempts
 #               init word_in_progress: the first letter is secret_word[0], then for every other char in secret_word we have " ___". 
 #               That is secret_word[0] + "_"*(len(secret_word) - 1) <-- we need to substract 1 because we already have the first letter
 #               attempt = 1
-#          repeat until N + 1
-#             read a letter c <-- in the future we would check if this was a letter, and only one, and that was not entered before, and transform it in lowercase, etc. Not in this assignment
-#             update word_in_progress: 
-#                    #find the right position for the letter  in secret_word if that is the case --> 
-#                       for every char in secret_word, if char is equal to c: 
-#                           we found it! --> update word_in_progress in that position
-#                        The loop  ended and I did not find the letter! --> print number attempts left (N - attempt)
+# Execution loop: 
+  repeat until N + 1
+     read a letter c <-- in the future we would check if this was a letter, 
+     and only one, and that was not entered before, and transform it in lowercase, etc. 
+     Not in this assignment
+         update word_in_progress: 
+         #find the right position for the letter  in secret_word if that is the case --> 
+             for every char in secret_word, if char is equal to c: 
+                 we found it! --> update word_in_progress in that position
+                he loop  ended and I did not find the letter! --> print number attempts left (N - attempt)
 #             verify if the word_in_progress == secret_word, in that case: success and exit          
 #          endloop           
 #
 ```
-```python
+```diff
 # Execution loop: 
 #          generate secret_word
 #          Initialize variables. 
@@ -105,7 +107,7 @@ repeat N times
 #          endloop           
 #
 ```
-```python
+```diff
 # Execution loop: 
 #          generate secret_word
 #          Initialize variables. 
@@ -128,7 +130,7 @@ repeat N times
 #             verify if the word_in_progress == secret_word, in that case: success and exit          
 #          endloop  
 ```
-```python
+```diff
 # Execution loop: 
 #          generate secret_word
 #          Initialize variables. 
