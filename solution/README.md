@@ -58,14 +58,14 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
   Init: Print word as: first letter in secret word + " ___" for every letter left in secret_word
   repeat N times:
       read a letter c 
- -    check if the letter is in the secret_word.
- +    find the right position pos for the letter in secret_word 
- +       if found 
- +           update word_in_progress character in position pos
-  .          #verify win condition. If true output success and exit  
-             verify if the word_in_progress == secret_word, in that case: success and exit     
- -       otherwise letter is not in the secret_word --> handle it
- +       if not found print how many attempts got left <-- track how many attempts already (remember initialize attempt = 1)
+-     check if the letter is in the secret_word.
++     find the right position pos for the letter in secret_word 
++         if found 
++             update word_in_progress character in position pos
+ .            #verify win condition. If true output success and exit  
+              verify if the word_in_progress == secret_word, in that case: success and exit     
+-         otherwise letter is not in the secret_word --> handle it
++         if not found print how many attempts got left <-- track how many attempts already (remember initialize attempt = 1)
       initialize next iteration 
   endloop           
 ```
@@ -89,7 +89,7 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 -     if not found print how many attempts got left 
 +     if not found (the loop  ended and I did not find the letter) --> print attempts left (N - attempt)
       initialize next iteration 
-   endloop           
+  endloop           
 ```
 ### Step 6
 ```diff
