@@ -41,24 +41,23 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
   endloop           
 ```
 ```diff
-# Execution loop: 
-  generate secret_word
+  Get secret_word
   Initialize variables. 
   N : max number of attempts
 + init word_in_progress: the first letter is secret_word[0], 
 + then for every char in secret_word we have " ___". 
-+ That is secret_word[0] + "_" * (len(secret_word) - 1) 
-+ <-- number of characters to be guessed (we substract 1 because we already have the first letter)
++ That is secret_word[0] + "_" * (len(secret_word) - 1) <-- number of characters to be guessed (we substract 1 because we already have the first letter)
   repeat N times:
       read a letter c <-- in the future we would check if this was a letter and only one, and that was not entered before, and transform it in lowercase, etc. Not in this assignment
       update word_in_progress: 
           find the right position for the letter in secret_word if that is the case and update word_in_progress in every appearance of the letter
           print how many attempts got left otherwise <-- track how many attempts already (remember initialize, attempt = 1)
-             verify if the word_in_progress == secret_word, in that case: success and exit          
+          verify if the word_in_progress == secret_word, in that case: success and exit     
+      otherwise letter is not in the secret_word --> handle it
   endloop           
 ```
 ```diff
-#          generate secret_word
+  Get secret_word
 #          Initialize variables. 
 #               N is the max number of attempts
 #               init word_in_progress: the first letter is secret_word[0], then for every other char in secret_word we have " ___". 
