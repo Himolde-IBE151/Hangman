@@ -24,13 +24,13 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 +                " You won! 😀" otherwise: " You lost! 😢"
 #
 ```
-```diff
-+        generate secret_word
-+        Initialize variables. N is the max number of attempts
+```python
+#        generate secret_word
+#        Initialize variables. N is the max number of attempts
 # Execution loop: 
 #          #Play until finish
 #          repeat N times
--             #if word is guessed:
+#             ~~if word is guessed:~~
 #             read a letter
 #             process the letter, if the word is complete: success and exit          
 #          endloop
