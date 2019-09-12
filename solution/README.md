@@ -20,29 +20,29 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 + inputs secret word. 
 + Initialization  
 # Play until finish. 
-#         if word is guessed: 
-+                 " You won! 😀" otherwise: " You lost! 😢"
+#     if word is guessed: 
++          " You won! 😀" otherwise: " You lost! 😢"
 #
 ```
-```python
-#        generate secret_word
-#        Initialize variables. N is the max number of attempts
+```diff
+generate secret_word
+Initialize variables. 
 # Execution loop: 
--          #Play until finish
-+          repeat N times
--             #if word is guessed:
-+             read a letter
-+             process the letter, if the word is complete: success and exit          
-#          endloop
+- #Play until finish
++ repeat N times --> I need initialize N as the max number of attempts
+-     #if word is guessed:
++     read a letter
++     process the letter, if the word is complete: success and exit          
+# endloop
 #          
 ```
 ```python
-# Execution loop: 
-#          generate secret_word
-#          Initialize variables. N is the max number of attempts
-#          repeat N times
-#             read a letter
-#             #process the letter, if the word is complete: success and exit  
+generate secret_word
+Initialize variables:
++ N : max number of attempts
+repeat N times
+      read a letter
+      #process the letter, if the word is complete: success and exit  
 #                check if the letter is in the secret_word. keep a record of the letters entered and their position. better in a word! -> update word_in_progress (remember to initialize!)
 #                verify if the word_in_progress == secret_word, in that case: success and exit          
 #          endloop           
