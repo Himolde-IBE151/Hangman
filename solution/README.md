@@ -62,7 +62,7 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
   .          #verify win condition. If true output success and exit  
              verify if the word_in_progress == secret_word, in that case: success and exit     
  -       otherwise letter is not in the secret_word --> handle it
- +       otherwise print how many attempts got left <-- track how many attempts already (remember initialize attempt = 1)
+ +       if not found print how many attempts got left <-- track how many attempts already (remember initialize attempt = 1)
       initialize next iteration 
   endloop           
 ```
@@ -72,39 +72,44 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
   N : max number of attempts
   word_in_progress: secret_word[0] + "_" * (len(secret_word) - 1)
 + attempt = 1
+  Print word as: first letter in secret word + " ___" for every letter left in secret_word
   repeat N times:
      read a letter c 
      #check if the letter is in the secret_word.
--    find the right position pos for the letter in secret_word 
-+    for every char in secret_word, if char is equal to c: 
-         if found 
-             update word_in_progress: 
-                 we found it! --> update word_in_progress in that position
-                he loop  ended and I did not find the letter! --> print number attempts left (N - attempt)
-#             verify if the word_in_progress == secret_word, in that case: success and exit          
-#          endloop           
-#
+-    find the position pos of the letter in secret_word if that is the case
++    for every char, pos in secret_word
+-        if found 
++        if char is equal to c: 
+             update word_in_progress character in position pos
+             verify if the word_in_progress == secret_word, in that case: success and exit          
+-     if not found print how many attempts got left 
++     if not found (the loop  ended and I did not find the letter) --> print attempts left (N - attempt)
+      initialize next iteration 
+   endloop           
 ```
 ```diff
-#          generate secret_word
-#          Initialize variables. 
-#               N is the max number of attempts
-#               init word_in_progress: the first letter is secret_word[0], then for every char in secret_word we have "_". 
-#               That is secret_word[0] + "_" * (len(secret_word) - 1) <-- we need to substract 1 because we already have the first letter
-#               attempt = 1
-#          repeat until N + 1
-#             print word_in_progress[0]
-#             for every char in word_in_process[1:] print + " _" + char + "_"             
-#             read a letter c <-- in the future we would check if this was a letter, and only one, and that was not entered before, and transform it in lowercase, etc. Not in this assignment
-#             update word_in_progress: 
-#                    #find the right position for the letter  in secret_word if that is the case --> 
-#                       for every char in secret_word, if char is equal to c: 
-#                           # we found it! -->update word_in_progress in that position: replace "_" by the char
-#                               word_in_progress = word_in_progress[:pos] + char + word_in_progress[pos+1:]                            
+  Get secret_word
+  Initialize variables. 
+  N : max number of attempts
+  word_in_progress: secret_word[0] + "_" * (len(secret_word) - 1)
+  attempt = 1
+  Print word as: first letter in secret word + " ___" for every letter left in secret_word
+  repeat N times:
+     read a letter c 
+     update word_in_progress: 
+     #check if the letter is in the secret_word.
+     for every char, pos in secret_word
+         if char is equal to c: 
+-             update word_in_progress character in position pos
++             word_in_progress = word_in_progress[:pos] + char + word_in_progress[pos+1:]                            
 #                        The loop  ended and I did not find the letter! --> print number attempts left (N - attempt)
 #             verify if the word_in_progress == secret_word, in that case: success and exit          
-#          endloop           
 #
+-    initialize next iteration 
++    print word_in_progress[0] + 
++    for every char in word_in_process[1:] print + " _" + char + "_"  
+  endloop           
+
 ```
 ```diff
 # Execution loop: 
