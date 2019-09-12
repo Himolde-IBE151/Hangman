@@ -24,53 +24,61 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 + repeat N times --> I need initialize N as the max number of attempts
 -     #if word is guessed:
 +     read a letter
-+     process the letter, if the word is complete: success and exit          
++     process the letter. 
++.    verify win condition. If true output success and exit 
++     initialize next iteration 
   endloop  
 ```
 ```diff
   Get secret_word
-  Initialize variables:
+- Initialization
++ Initialize variables:
 + N : max number of attempts
++ Print word as: first letter in secret word + " ___" for every letter left in secret_word
   repeat N times
-      read a letter
--     #process the letter, if the word is complete: success and exit  
+      read a letter c <-- in the future we would check if this was a letter and only one, and that was not entered before, and transform it in lowercase, etc. Not in this assignment
+-     #process the letter  
 +     check if the letter is in the secret_word. (need to keep a record of the letters entered and their position:better in a word!-> word_in_progress) 
 +         update word_in_progress (remember to initialize!)
-+         verify if the word_in_progress == secret_word, in that case: success and exit    
-+     otherwise letter is not in the secret_word --> handle it
+-.        #verify win condition. If true output success and exit  
++         verify if the word_in_progress == secret_word, in that case: output success and exit    
++         otherwise letter is not in the secret_word --> handle it
+      initialize next iteration 
   endloop           
 ```
 ```diff
   Get secret_word
   Initialize variables. 
   N : max number of attempts
-+ init word_in_progress: the first letter is secret_word[0], 
-+ then for every char in secret_word we have " ___". 
-+ That is secret_word[0] + "_" * (len(secret_word) - 1) <-- number of characters to be guessed (we substract 1 because we already have the first letter)
++ init word_in_progress: the first letter is secret_word[0], then for every char in secret_word we have "_". 
++ => word_in_progress: secret_word[0] + "_" * (len(secret_word) - 1) <-- number of characters to be guessed (we substract 1 because we already have the first letter)
+  Print word as: first letter in secret word + " ___" for every letter left in secret_word
   repeat N times:
-      read a letter c <-- in the future we would check if this was a letter and only one, and that was not entered before, and transform it in lowercase, etc. Not in this assignment
-      update word_in_progress: 
-          find the right position for the letter in secret_word if that is the case and update word_in_progress in every appearance of the letter
-          print how many attempts got left otherwise <-- track how many attempts already (remember initialize, attempt = 1)
-          verify if the word_in_progress == secret_word, in that case: success and exit     
-      otherwise letter is not in the secret_word --> handle it
+      read a letter c 
+ -    check if the letter is in the secret_word.
+ +    find the right position pos for the letter in secret_word 
+ +       if found 
+ +           update word_in_progress character in position pos
+  .          #verify win condition. If true output success and exit  
+             verify if the word_in_progress == secret_word, in that case: success and exit     
+ -       otherwise letter is not in the secret_word --> handle it
+ +       otherwise print how many attempts got left <-- track how many attempts already (remember initialize attempt = 1)
+      initialize next iteration 
   endloop           
 ```
 ```diff
   Get secret_word
-#          Initialize variables. 
-#               N is the max number of attempts
-#               init word_in_progress: the first letter is secret_word[0], then for every other char in secret_word we have " ___". 
-#               That is secret_word[0] + "_"*(len(secret_word) - 1) <-- we need to substract 1 because we already have the first letter
-#               attempt = 1
-# Execution loop: 
-  repeat until N + 1
-     read a letter c <-- in the future we would check if this was a letter, 
-     and only one, and that was not entered before, and transform it in lowercase, etc. 
-     Not in this assignment
-         update word_in_progress: 
-         #find the right position for the letter  in secret_word if that is the case --> 
-             for every char in secret_word, if char is equal to c: 
+  Initialize variables. 
+  N : max number of attempts
+  word_in_progress: secret_word[0] + "_" * (len(secret_word) - 1)
++ attempt = 1
+  repeat N times:
+     read a letter c 
+     #check if the letter is in the secret_word.
+-    find the right position pos for the letter in secret_word 
++    for every char in secret_word, if char is equal to c: 
+         if found 
+             update word_in_progress: 
                  we found it! --> update word_in_progress in that position
                 he loop  ended and I did not find the letter! --> print number attempts left (N - attempt)
 #             verify if the word_in_progress == secret_word, in that case: success and exit          
@@ -78,7 +86,6 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 #
 ```
 ```diff
-# Execution loop: 
 #          generate secret_word
 #          Initialize variables. 
 #               N is the max number of attempts
