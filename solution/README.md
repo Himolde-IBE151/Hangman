@@ -17,11 +17,11 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 + Output: is the whole word is guessed: " You won! 😀" otherwise: " You lost! 😢"
 
 # Game: 
-+          inputs secret word. 
-+          Initialization  
-#          Play until finish. 
-#             if word is guessed: 
-+                " You won! 😀" otherwise: " You lost! 😢"
++ inputs secret word. 
++ Initialization  
+# Play until finish. 
+#         if word is guessed: 
++                 " You won! 😀" otherwise: " You lost! 😢"
 #
 ```
 ```python
