@@ -14,7 +14,7 @@ print("😢")
 print("\U0001F606") 
   
 # rolling on the floor laughing 
-print("\U0001F923") \
+print("\U0001F923") 
 
 #face with rolling eyes
 print("\N{face with rolling eyes}") 
