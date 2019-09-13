@@ -29,7 +29,7 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 +     process the letter. 
 +.    verify win condition. if word is guessed: output " You won! 😀" exit
   endloop  
-  if word is not guessed ouput " You lost! 😢" 
+  if word is not guessed output " You lost! 😢" 
 ```
 ### Step 3
 ```diff
@@ -47,7 +47,7 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 +         verify if the word_in_progress == secret_word, in that case: output " You won! 😀"  and exit    
 +         otherwise letter is not in the secret_word --> handle it
   endloop  
-  if word is not guessed ouput " You lost! 😢" 
+  if word is not guessed output " You lost! 😢" 
 ```
 ### Step 4
 ```diff
@@ -68,7 +68,7 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 -         otherwise letter is not in the secret_word --> handle it
 +         if not found print how many attempts got left <-- track how many attempts already (remember initialize attempt = 1)
   endloop   
-  if word is not guessed ouput " You lost! 😢" 
+  if word is not guessed output " You lost! 😢" 
 ```
 ### Step 5
 ```diff
@@ -91,7 +91,7 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 +     if not found (the loop  ended and I did not find the letter) --> print attempts left (N - attempt)
 +     otherwise verify if the word_in_progress == secret_word, in that case: success and exit          
   endloop 
-  if word is not guessed ouput " You lost! 😢" 
+  if word is not guessed output " You lost! 😢" 
 ```
 ### Step 6
 ```diff
@@ -115,7 +115,7 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
      if not found print how many attempts got left (N - attempt) 
      otherwise verify if the word_in_progress == secret_word, in that case: success and exit               
   endloop     
-  if word is not guessed ouput " You lost! 😢" 
+  if word is not guessed output " You lost! 😢" 
 ```
 ### Step 7
 ```diff
@@ -139,7 +139,7 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 -    otherwise verify if the word_in_progress == secret_word, in that case: success and exit 
 +    otherwise verify if the word_in_progress == secret_word, in that case: won = True and exit (initialize won = False at the beginning of the game)               
   endloop    
-  if word is not guessed ouput " You lost! 😢" 
+  if word is not guessed output " You lost! 😢" 
 ```
 ### Step 8
 ```diff
@@ -164,7 +164,7 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 +    Found == False? print how many attempts got left (N - attempt).  
      otherwise verify if the word_in_progress == secret_word, in that case: won = True and exit (initialize won = False at the beginning of the game)               
   endloop   
-- if word is not guessed ouput " You lost! 😢" 
-+ if won == False then ouput " You lost! 😢" 
+- if word is not guessed output " You lost! 😢" 
++ if won == False then output " You lost! 😢" 
 + Print word?
 ```
