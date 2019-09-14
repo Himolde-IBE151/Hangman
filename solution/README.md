@@ -137,7 +137,7 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 -    if not found print how many attempts got left (N - attempt)
 +    Flag found is still false? => print how many attempts got left (N - attempt) -> need to initialize found = False BEFORE THE FIND POSITION LOOP. Need to set found = true INSIDE THE LOOP IF FOUND  
 -    otherwise verify if the word_in_progress == secret_word, in that case: success and exit 
-+    otherwise verify if the word_in_progress == secret_word, in that case: won = True and exit (initialize won = False at the beginning of the game)               
++    otherwise verify if the word_in_progress == secret_word, in that case: won = True, output  " You won! 😀" and exit (initialize won = False at the beginning of the game)               
   endloop    
   if word is not guessed output " You lost! 😢" 
 ```
@@ -162,9 +162,9 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
               word_in_progress = word_in_progress[:pos] + char + word_in_progress[pos+1:]                            
 -    Flag found is still false? => print how many attempts got left (N - attempt) -> need to initialize found = False BEFORE THE FIND POSITION LOOP. Need to set found = true INSIDE THE LOOP IF FOUND  
 +    Found == False? print how many attempts got left (N - attempt).  
-     otherwise verify if the word_in_progress == secret_word, in that case: won = True and exit (initialize won = False at the beginning of the game)               
+     otherwise verify if the word_in_progress == secret_word, in that case: won = True, output  " You won! 😀" and exit (initialize won = False at the beginning of the game)               
   endloop   
 - if word is not guessed output " You lost! 😢" 
 + if won == False then output " You lost! 😢" 
-+ Print word?
++ Print secret_word? Not in the specification but is nice.
 ```
