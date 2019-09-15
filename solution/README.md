@@ -22,7 +22,7 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
  Initialization
 # Execution loop: 
 - #Play until finish
-+ repeat N times --> I need initialize N as the max number of attempts
++ repeat N times everything from here to endloop --> I need initialize N as the max number of attempts
 +     print word with spaces
 -     #if word is guessed:
 +     read a letter
@@ -37,7 +37,7 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
 - Initialization
 + Initialize variables:
 + N : max number of attempts
-  repeat N times
+  repeat N times everything from here to endloop:
       print word with spaces
       read a letter c <-- in the future we would check if this was a letter and only one, and that was not entered before, and transform it in lowercase, etc. Not in this assignment
 -     #process the letter  
@@ -56,7 +56,7 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
   N : max number of attempts
 + init word_in_progress: the first letter is secret_word[0], then for every char in secret_word we have "_". 
 + => word_in_progress: secret_word[0] + "_" * (len(secret_word) - 1) <-- number of characters to be guessed (we substract 1 because we already have the first letter)
-  repeat N times:
+  repeat N times everything from here to endloop:
       print word with spaces
       read a letter c 
 -     check if the letter is in the secret_word.
@@ -77,7 +77,7 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
   N : max number of attempts
   word_in_progress: secret_word[0] + "_" * (len(secret_word) - 1)
 + attempt = 1
-  repeat N times:
+  repeat N times everything from here to endloop:
      print word with spaces
      read a letter c 
      #check if the letter is in the secret_word.
@@ -100,9 +100,9 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
   N : max number of attempts
   word_in_progress: secret_word[0] + "_" * (len(secret_word) - 1)
   attempt = 1
-  repeat N times:
+  repeat N times everything from here to endloop:
 -    print word with spaces
-+    print word_in_progress[0] + 
++    print word_in_progress[0] 
 +    for every char in word_in_process[1:] print + " _" + char + "_" 
      read a letter c 
      update word_in_progress: 
@@ -124,8 +124,8 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
   N : max number of attempts
   word_in_progress: secret_word[0] + "_" * (len(secret_word) - 1)
   attempt = 1
-  repeat N times:
-     print word_in_progress[0] + 
+  repeat N times everything from here to endloop:
+     print word_in_progress[0]  
      for every char in word_in_process[1:] print + " _" + char + "_" 
      read a letter c 
      update word_in_progress: 
@@ -149,8 +149,8 @@ In this assignment you will implement the **Hangman game**. Do not rush to write
   word_in_progress: secret_word[0] + "_" * (len(secret_word) - 1)
   attempt = 1
 + won = False
-  repeat N times:
-     print word_in_progress[0] + 
+  repeat N times everything from here to endloop:
+     print word_in_progress[0]  
      for every char in word_in_process[1:] print + " _" + char + "_" 
      read a letter c 
      #check if the letter is in the secret_word.
