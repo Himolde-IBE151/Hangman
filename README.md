@@ -18,10 +18,13 @@ The position **must be an integer**.
 ### Exercise: 
 **Input a string s from the keyboard. Assuming that the user always enters a string with more than two characters, print the second letter of s.**
 The second letter of s is at position 1, since the index of the first position is 0.
+<details><summary>
 ```python
 s = input ("Enter a word with more than two characters ")
 print("The second character in the word you typed is", s[1])
 ```
+</summary></details>
+  
 ### Exercise: 
 **Input a string s and the position p of a letter in s. Print the letter that corresponds to the position p in s.**
 ```python
